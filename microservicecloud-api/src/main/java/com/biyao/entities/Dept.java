@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @Author:hxs
- * @Description:生产单汇总处理
+ * @Description:bean
  */
 @NoArgsConstructor
 @AllArgsConstructor
