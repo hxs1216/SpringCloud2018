@@ -9,7 +9,7 @@ mybatis:
 
 spring:
    application:
-    name: microservicecloud-dept
+    name: microservicecloud
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -29,3 +29,9 @@ eureka:
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true #访问路径可以显示IP地址
+
+info:
+  app.name: microservicecloud
+  company.name: aaaa
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
