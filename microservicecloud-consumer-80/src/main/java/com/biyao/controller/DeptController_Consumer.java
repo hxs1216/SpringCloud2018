@@ -15,7 +15,8 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://microservicecloud";
 
     @Autowired
     private RestTemplate restTemplate; //spring提供的用于访问rest服务的客户端模板工具集
