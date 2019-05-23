@@ -16,6 +16,7 @@
         <module>microservicecloud-eureka-7003</module>
         <module>microservicecloud-provider-8002</module>
         <module>microservicecloud-provider-8003</module>
+        <module>microservicecloud-consumer-feign</module>
     </modules>
     <packaging>pom</packaging>
 

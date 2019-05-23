@@ -15,7 +15,7 @@ public class MySelfRule {
 
     @Bean
     public IRule myRule(){
-        return new RandomRule();
+        return new RandomRule_ZY(); // 自定义为每台机器5次
     }
 
 }
