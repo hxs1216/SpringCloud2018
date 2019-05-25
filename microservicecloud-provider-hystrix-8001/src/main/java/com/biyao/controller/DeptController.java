@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @Author:hxs
- * @Description:Dept增删改查
+ * @Description:Dept增删改查(hystrix服务熔断)
  */
 @RestController //@RestController注解相当于@ResponseBody ＋ @Controller
 public class DeptController

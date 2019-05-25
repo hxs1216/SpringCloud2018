@@ -12,7 +12,8 @@ import java.util.List;
  * @Description:feign定义服务绑定接口且以声明式的方法
  */
 
-@FeignClient(value = "MICROSERVICECLOUD")
+//@FeignClient(value = "MICROSERVICECLOUD")
+@FeignClient(value = "MICROSERVICECLOUD",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService
 {
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)

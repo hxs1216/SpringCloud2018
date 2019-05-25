@@ -18,6 +18,7 @@
         <module>microservicecloud-provider-8003</module>
         <module>microservicecloud-consumer-feign</module>
         <module>microservicecloud-provider-hystrix-8001</module>
+        <module>microservicecloud-consumer-hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 
