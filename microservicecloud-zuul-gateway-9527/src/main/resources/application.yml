@@ -1,0 +1,27 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+    instance:
+        instance-id: gateway-9527.com
+        prefer-ip-address: true #访问路径可以显示IP地址
+
+zuul:
+  #ignored-services: microservicecloud-dept
+  ignored-services: "*" #屏蔽之前通过项目名访问接口入口
+  routes:
+    mydept.serviceId: microservicecloud
+    mydept.path: /service/**
+
+info:
+  app.name: microservicecloud
+  company.name: biyao
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
